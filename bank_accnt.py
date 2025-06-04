@@ -26,7 +26,6 @@ while a != '5':
 
     elif a == '2':
         number = input("Account Number: ")
-        b = 0
         for i in accounts:
             if i['number'] == number:
 
@@ -36,12 +35,11 @@ while a != '5':
                     print("Amount Deposited")
                 else:
                     print("Enter positive number!")
-            if b == 0:
+            else:
                 print("Account not available!")
 
     elif a == '3':
         number = input("Account Number: ")
-        b = 0
         for i in accounts:
             if i['number'] == number:
                 amount = float(input("Withdraw Amount: "))
@@ -53,22 +51,21 @@ while a != '5':
                         print("Not enough balance")
                 else:
                     print("Enter positive number")
-            if b == 0:
+            else :
                 print("Account not available")
 
     elif a == '4':
         number = input("Account Number: ")
-        b = 0
         for i in accounts:
             if i['number'] == number:
                 print("Name:", i['name'])
                 print("Account Number:", i['number'])
                 print("Balance:", i['balance'])
-            if b == 0:
+            else:
                 print("Account not available")
 
     elif a == '5':
         print("Exit")
 
     else:
-        print("Invalid a!")
+        print("Invalid input")
