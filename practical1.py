@@ -404,25 +404,25 @@
 #         a = a * (i - j) // (j + 1)
 #     print()
 #--------------------------------------------------------
-n = int(input("Enter the number : "))
-if n <= 0:
-    print("Enter a number greayer than zero")
-for i in range (n):
-    for l in range(i):
-        print(" ", end=" ") 
-    a = [0, 1]                                                # pattern with fibanocii
-    for j in range(2, n):
-        a.append(a[j-1] + a[j-2])
-    for k in range(n-1, -1, -1):
-        print(a[k], end=' ')
+# n = int(input("Enter the number : "))
+# if n <= 0:
+#     print("Enter a number greayer than zero")
+# for i in range (n):
+#     for l in range(i):
+#         print(" ", end=" ") 
+#     a = [0, 1]                                                # pattern with fibanocii
+#     for j in range(2, n):
+#         a.append(a[j-1] + a[j-2])
+#     for k in range(n-1, -1, -1):
+#         print(a[k], end=' ')
 
-    first = 0
-    second = 1
-    for i in range(n):
-        a.append(first)
-        print(first,end=" ")
-        c = first + second
-        first = second
-        second = c
-    print()
-    n -= 1
+#     first = 0
+#     second = 1
+#     for i in range(n):
+#         a.append(first)
+#         print(first,end=" ")
+#         c = first + second
+#         first = second
+#         second = c
+#     print()
+#     n -= 1
